@@ -1,4 +1,4 @@
-<jsp:useBean id = "logBean" class = "com.example.demo1.LoginBean" scope = "session"/>
+<jsp:useBean id="logBean" type="com.example.demo1.LoginBean" scope="session"/>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Open+Sans:300,300i,400,400i,700,700i">
     <link href=" https:
     //maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/custom.css">
@@ -210,11 +210,17 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="ProdukteSeite	.jsp">Produkte</a>
+                            <a class="nav-link" href="Produkte.jsp">Produkte</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="Impressum.jsp">Impressum</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Warenkorb.jsp">
+                                <img id="warenkorbNav" src="../img/warenkorbIcon.png" width="64px" height="64px">
+                            </a>
                         </li>
 
                     </ul>
@@ -334,7 +340,7 @@
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0yERyBTpLduCQFNoBupuxVysf0up3fr1lAA&usqp=CAU">
                                 </label>
                                 <label style="display: flex; flex-direction: column; flex: 50%; margin: 1%">
-                                    <input type="number" id="boden_m2" name="bodenfläche" >
+                                    <input type="number" id="boden_m2" name="bodenfläche">
                                     Quadratmeter (m²)
                                 </label>
                             </fieldset>
@@ -345,10 +351,10 @@
                                 <label style="display: flex; flex-direction: column; flex: 50%; margin: 1%">
                                     <img src="data:image/jpeg;base64,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">
                                     <label style="display: flex; flex-direction: column; flex: 50%; margin: 1%">
-                                        <input type="number" id="wand_m2" name="wandfläche" >
+                                        <input type="number" id="wand_m2" name="wandfläche">
                                         Quadratmeter (m²)
 
-                                        </label>
+                                    </label>
                                 </label>
 
                             </fieldset>
@@ -356,12 +362,14 @@
                         <div aria-hidden="true" id="div7" style="display: none">
                             <h3>Kontaktdaten</h3>
                             <p>Info: Ihre Daten werden vertraulich bearbeitet</p>
-                            <label for="name">Vor-und Nachname:</label> <input type="text" id="name"
-                                                                               name="name" value="<%logBean.getUsername();%>"><br>
-                            <br> <label for="email">Email:</label> <input type="text"
-                                                                          id="email" name="email"><br>
-                            <label for="tel">Telefonnummer:</label><input type="number" id="tel"
-                                                                          name="Telefonnummer"><br>
+                            <label for="name">Vor-und Nachname:</label>
+                            <input type="text" id="name"name="name"value="${logBean.username}">
+                            <br>
+                            <br>
+                            <label for="email">Email:</label>
+                            <input type="text"id="email" name="email" value="${logBean.email}"><br>
+                            <label for="tel">Telefonnummer:</label>
+                            <input type="number" id="tel"name="Telefonnummer"><br>
                             <br>
                             <%-- <input type="submit" value="Submit" id="submit">--%>
                             <button class="btn btn-1" id='submit' value="Send">Abgeben</button>
@@ -411,11 +419,11 @@
     $('#saveAuftrag').submit(function () {
 
 
-        if (name.value === "" || email.value === "" ){
+        if (name.value === "" || email.value === "") {
             alert('Bitte geben Sie Ihre Kontakdaten richtig ein')
             return false
 
-        }else {
+        } else {
             alert('Ihr Auftrag ist bei uns eingegangen und wird schnellstmöglich bearbeitet')
             window.location.href = "saveToDB.jsp"
         }
@@ -426,7 +434,7 @@
     nextBtn.onclick = function () {
 
         console.log(index, divs)
-        if (index == divs.length-1) {
+        if (index == divs.length - 1) {
             return
         } else {
             divs[index].style.display = "none"

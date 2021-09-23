@@ -48,118 +48,7 @@
             color: black;
         }
 
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0); /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-        }
 
-        .btn {
-            border: none;
-            font-family: 'Lato';
-            font-size: inherit;
-            color: inherit;
-            background: none;
-            cursor: pointer;
-            padding: 25px 80px;
-            display: inline-block;
-            margin: 15px 30px;
-            letter-spacing: 1px;
-            font-weight: 700;
-            outline: none;
-            position: relative;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
-        }
-
-        .btn:after {
-            content: '';
-            position: absolute;
-            z-index: -1;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
-        }
-
-        /* Pseudo elements for icons */
-        .btn:before {
-            font-family: 'FontAwesome';
-            speak: none;
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
-            position: relative;
-            -webkit-font-smoothing: antialiased;
-        }
-
-
-        /* Icon separator */
-        .btn-sep {
-            padding: 25px 60px 25px 120px;
-        }
-
-        .btn-sep:before {
-            background: rgba(0, 0, 0, 0.15);
-        }
-
-        /* Button 1 */
-        .btn-1 {
-            background: #3498db;
-            color: #fff;
-        }
-
-        .btn-1:hover {
-            background: #2980b9;
-        }
-
-        .btn-1:active {
-            background: #2980b9;
-            top: 2px;
-        }
-
-        .btn-1:before {
-            position: absolute;
-            height: 100%;
-            left: 0;
-            top: 0;
-            line-height: 3;
-            font-size: 140%;
-            width: 60px;
-        }
-
-        /* Modal Content/Box */
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto; /* 15% from the top and centered */
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
-        }
-
-        /* The Close Button */
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
 
         /* HIDE RADIO */
         [type=radio] {
@@ -208,11 +97,17 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="ProdukteSeite	.jsp">Produkte</a>
+                            <a class="nav-link" href="Produkte.jsp">Produkte</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="Impressum.jsp">Impressum</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Warenkorb.jsp">
+                                <img id="warenkorbNav" src="../img/warenkorbIcon.png" width="64px" height="64px">
+                            </a>
                         </li>
 
                     </ul>

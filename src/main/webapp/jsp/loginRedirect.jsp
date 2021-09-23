@@ -10,12 +10,16 @@
     String name = request.getParameter("login_name");
     String password = request.getParameter("login_password");
 
+
     logBean.setUsername(name);
     logBean.setPassword(password);
 
     boolean flag = logBean.checkIfRegistered(name,password);
     System.out.println("checking if username exists");
     if (flag) {
+        String email = logBean.getEmail(name,password);
+        logBean.setEmail(email);
+        //session.setAttribute("logBean",logBean);
         response.sendRedirect("main.jsp");
         System.out.println("user and password check +");
 

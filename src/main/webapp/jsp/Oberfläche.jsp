@@ -22,39 +22,47 @@
       
   </head>
 <body>
- <nav class="navbar navbar-expand-md navbar-custom fixed-top">
-        <div class="container">
-   <a class="navbar-brand" href="Oberfläche.jsp">F&R Fliesenfachgeschäft</a>
-           	<img src="../img/Logo3.jpg" alt="" width="350px">
-            <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsDefault">
-                <ul class="navbar-custom navbar-nav ml-auto">
-                
-                
-                    
-                    <li class="nav-item active">
-                    <a class="nav-link" href="Oberfläche.jsp">Über uns <span class="sr-only">(current)</span></a>
-                    </li>
-                    
-                    <li class="nav-item">
-   	                 <a class="nav-link" href="builder.jsp" >Online-Angebot</a>
-                    </li>
-   
-                   <li class="nav-item">
-   	                 <a class="nav-link" href="ProdukteSeite.jsp" >Produkte</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                    <a class="nav-link" href="Impressum.jsp">Impressum</a>
-                    </li>
-          
-                </ul>              
-                
-            </div>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-md navbar-custom fixed-top">
+	<div class="container">
+		<a class="navbar-brand" href="Oberfläche.jsp"></a>
+		<img src="../../img/Logo2.jpg" alt="" width="250px">
+		<button class="navbar-light navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false"
+				aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarsDefault">
+			<ul class="navbar-custom navbar-nav ml-auto">
+
+
+				<li class="nav-item active">
+					<a class="nav-link" href="Oberfläche.jsp">Über uns <span
+							class="sr-only">(current)</span></a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="builder.jsp">Online-Angebot</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="Produkte.jsp">Produkte</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="Impressum.jsp">Impressum</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="Warenkorb.jsp">
+						<img id="warenkorbNav" src="../img/warenkorbIcon.png" width="64px" height="64px">
+					</a>
+				</li>
+
+			</ul>
+		</div>
+
+	</div>
+</nav>
 <div class="intro">
 <div class="intro-body">
 	<div class="container">

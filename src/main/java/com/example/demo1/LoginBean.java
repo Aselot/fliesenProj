@@ -1,9 +1,10 @@
 package com.example.demo1;
 
+import java.io.Serializable;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class LoginBean {
+public class LoginBean implements Serializable {
 
     DBAcess dbAcess = new DBAcess();
 
@@ -46,8 +47,18 @@ public class LoginBean {
             throwables.printStackTrace();
             return false;
         }
+    }
 
-
+    public String getEmail(String username, String password){
+        String query = String.format("Select * From Profile Where name = \"%s\" and passwort = \"%s\";",username,password);
+        ResultSet rs = dbAcess.runQueryAndSaveAndReturnResultSet(query);
+        try {
+            rs.next();
+            return rs.getString("Email");
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return null;
     }
 
 

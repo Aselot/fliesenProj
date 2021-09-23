@@ -29,35 +29,37 @@
 <nav class="navbar navbar-expand-md navbar-custom fixed-top">
     <div class="container">
         <a class="navbar-brand" href="Oberfläche.jsp"></a>
-        <img src="../img/Logo2.JPG" alt="" width="250px">
-        <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="../../img/Logo2.jpg" alt="" width="250px">
+        <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false"
+                aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarsDefault">
             <ul class="navbar-custom navbar-nav ml-auto">
 
 
-
                 <li class="nav-item active">
-                    <a class="nav-link" href="Oberfläche.jsp">Über uns <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="Oberfläche.jsp">Über uns <span
+                            class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="builder.jsp">Online-Angebot</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mehr</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="https://frischefliesen.de/">Parnter: Sengewitz</a>
-                        <a class="dropdown-item" href="https://www.rb-badkonzepte.de/">Partner: Ries & Berger </a>
-                        <a class="dropdown-item" href="builder.jsp">Unsere Produkte </a>
-                    </div>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="Produkte.jsp">Produkte</a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="Impressum.jsp">Impressum</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Warenkorb.jsp">
+                        <img id="warenkorbNav" src="../img/warenkorbIcon.png" width="64px" height="64px">
+                    </a>
                 </li>
 
             </ul>

@@ -1,6 +1,8 @@
 package com.example.demo1;
 
-public class RegisterBean {
+import java.io.Serializable;
+
+public class RegisterBean implements Serializable {
 
     String name;
     String email;
