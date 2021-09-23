@@ -10,7 +10,7 @@ public class EmailBean {
     final String username = "";
     final String password = "";
 
-    String emailBotAdress = "aygunselvi@gmail.com";
+    String emailBotAdress = "";
     String host = "localhost";
     Properties properties;
     Session session;
