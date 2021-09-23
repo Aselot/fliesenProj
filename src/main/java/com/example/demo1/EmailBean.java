@@ -7,8 +7,8 @@ import javax.activation.*;
 
 public class EmailBean {
 
-    final String username = "aygunselvi@gmail.com";
-    final String password = "2211aayy2211aayy";
+    final String username = "";
+    final String password = "";
 
     String emailBotAdress = "aygunselvi@gmail.com";
     String host = "localhost";
